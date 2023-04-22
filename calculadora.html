@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link href="assets/css/estilos.css" rel="stylesheet" />
+
+    
+
+    <script src="assets/js/Display.js" type="text/javascript"></script>
+    <script src="assets/js/Calculadora.js" type="text/javascript"></script>
+    <script src="assets/js/index.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="prueba">
+        <div class="row">
+            <div class="text-center col-md-auto bg-dark">
+                <h1>Calculadora</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5 my-5">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>      
+            
+            <button class="col-11" onclick="display.borrarTodo()">C</button>                    
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">/</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">X</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="col-11 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <footer class="bg-dark text-light p-4 mt-3">
+        <p style="text-align:center" class="mb-0">Grupo 3 año 2023 Integrantes Felipe Valderrama - Cinthya Caldera - Juan Barrientos - Jonathan Moya . Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
