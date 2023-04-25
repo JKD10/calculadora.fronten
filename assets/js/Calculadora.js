@@ -1,3 +1,4 @@
+/* En esta parte creamos la clase calculadora con sus variables */
 class Calculadora {
     sumar(num1, num2) {
         return num1 + num2;

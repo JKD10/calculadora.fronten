@@ -1,3 +1,5 @@
+/*Creamos las constantes de los valores y operadores */
+
 const displayValorAnterior = document.getElementById('valor-anterior');
 const displayValorActual = document.getElementById('valor-actual');
 const botonesNumeros = document.querySelectorAll('.numero');

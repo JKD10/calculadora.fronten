@@ -13,19 +13,20 @@ class Display {
             restar: '-', 
         }
     }
-
+/* En esta parte borramos los valores de 1 en 1*/
     borrar() {
         this.valorActual = this.valorActual.toString().slice(0,-1);
         this.imprimirValores();
     }
 
+    /*En esta parte borramos todos los valores y reseteamos la calculadora*/
     borrarTodo() {
         this.valorActual = '';
         this.valorAnterior = '';
         this.tipoOperacion = undefined;
         this.imprimirValores();
     }
-
+    /*Aqui generamos el proceso para mostrar el resultado de la operación */
     computar(tipo) {
         this.tipoOperacion !== 'igual' && this.calcular();
         this.tipoOperacion = tipo;
@@ -39,7 +40,7 @@ class Display {
         this.valorActual = this.valorActual.toString() + numero.toString();
         this.imprimirValores();
     }
-
+    /*En esta parte mostramos los valores en pantalla*/
     imprimirValores() {
         this.displayValorActual.textContent = this.valorActual;
         this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
