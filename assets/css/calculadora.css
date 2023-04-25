@@ -1,12 +1,14 @@
 * {
+    box-sizing: border-box;
     font-family: 'Fraunces', serif;
     color: aliceblue;
 }
 
 body {
+    border: 10px solid grey;
     margin: 0;
     background-color: blueviolet;
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondo2.jpeg);
 }
 
 h1 {
